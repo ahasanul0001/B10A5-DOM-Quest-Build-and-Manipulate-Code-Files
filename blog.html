@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+
+    <!-- font awsome kit -->
+    <script src="https://kit.fontawesome.com/ff401b5bdb.js" crossorigin="anonymous"></script>
+    <!-- <i class="fa-solid fa-arrow-right"></i> -->
+
+    <!-- tailwind & daisy-ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font style cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- custom ui -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'text': '#111111', //115
+                        'tia': '#B4F461',
+                    },
+                    fontFamily: {
+                        lex: ['Lexend','sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-lex">
+    <!-- navbar -->
+    <section class="bg-[#F9F7F3] pb-[70px] pt-[10px] sticky top-0 z-50">
+        <div class="container max-w-[80%] mx-auto text-text">
+            <div class="navbar bg-base-100 bg-[#F9F7F3]">
+                <div class="navbar-start">
+                    <button id="btn-home" class="btn text-xl font-semibold px-8 bg-tia">Home</button>
+                    <!-- home button hidden -->
+                </div>
+                <div class="navbar-center">
+                    <img src="./assets/logo.png" alt="logo">
+                    <a class="text-2xl font-semibold mx-4">Donate Bangladesh</a>
+                </div>
+                <div class="navbar-end">
+                    <img src="./assets/coin.png" alt="logo">
+                    <a id="my-balance" class="text-2xl font-normal mx-3">5000 BDT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- faq -->
+     <section class="container max-w-[80%] mx-auto text-text my-[40px]">
+        <h3 class="text-[40px] font-extrabold text-slate-800">Important Faq <i class="fa-solid fa-question"></i></h3>
+     </section>
+
+    <!-- faq section -->
+     <section class="container max-w-[80%] mx-auto text-text">
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is the DOM in web development?</div>
+              <div class="collapse-content">
+                <p>The DOM is a programming interface that represents an HTML or XML document as a tree of objects, allowing scripts to manipulate the document structure and content.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">What are the main types of nodes in the DOM?</div>
+              <div class="collapse-content">
+                <p>The main node types are element nodes, text nodes, attribute nodes, comment nodes, and the document node.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">What is the difference between innerHTML and textContent?</div>
+              <div class="collapse-content">
+                <p>innerHTML manipulates HTML content (including tags), while textContent retrieves or sets plain text without HTML interpretation.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the DOM?</div>
+                <div class="collapse-content">
+                  <p>Event delegation is a technique where a single event listener on a parent element handles events for its child elements, improving performance by reducing the number of listeners.</p>
+                </div>
+            </div>
+          </div>
+     </section>
+
+    <!-- scripts -->
+    <script src="./js-files/home.js"></script>
+    <script src="./js-files/btnFeatures.js"></script>
+</body>
+</html>
