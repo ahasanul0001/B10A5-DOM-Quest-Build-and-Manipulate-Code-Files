@@ -138,6 +138,6 @@ document.getElementById('history-btn')
 //blog button
 document.getElementById('btn-blog')
     .addEventListener('click', function(){
-        window.location.href = 'blog.html'
+        window.location.href = 'blog.html';
     })
 //home button
