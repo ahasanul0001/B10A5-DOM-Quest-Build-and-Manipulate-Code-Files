@@ -40,16 +40,16 @@
 
 <body class="font-lex">
     <!-- navbar -->
-    <section class="bg-[#F9F7F3] pb-[70px] pt-[10px] sticky top-0 z-50">
+    <section class="bg-[#F9F7F3] pb-[30px] pt-[10px] sticky top-0 z-50">
         <div class="container max-w-[90%] md:max-w-[80%] mx-auto text-text">
             <div class="navbar bg-base-100 bg-[#F9F7F3]">
                 <div class="navbar-start">
                     <button id="btn-blog" class="btn text-xl font-semibold px-8 bg-tia">Blog</button>
                     <!-- home button hidden -->
                 </div>
-                <div class="hidden sm:block navbar-center">
-                    <img src="./assets/logo.png" alt="logo">
-                    <a class="text-2xl font-semibold mx-4">Donate Bangladesh</a>
+                <div class="navbar-center">
+                    <div class="hidden sm:block"><img src="./assets/logo.png" alt="logo"></div>
+                    <div><a class="text-2xl font-semibold mx-4 hidden sm:block ">Donate Bangladesh</a></div>
                 </div>
                 <div class="navbar-end">
                     <img src="./assets/coin.png" alt="logo">
@@ -60,7 +60,7 @@
     </section>
 
     <!-- button section -->
-    <section class="container my-0 bg-white sm:max-w-[90%] md:max-w-[80%] mx-auto text-text pt-[40px] pb-[32px] sticky top-[140px] z-40">
+    <section id="navSection" class="container bg-white sm:max-w-[90%] md:max-w-[80%] mx-auto text-text pt-[40px] pb-[32px] sticky top-[90px] z-40">
         <div class="text-center">
             <button id="donation-btn" class="btn text-xl font-semibold mr-4 p-8 py-3 bg-transparent border-slate-300 hover:bg-tia">Donation</button>
             <button id="history-btn" class="btn text-xl font-semibold px-8 py-3 bg-transparent border-slate-300 hover:bg-tia">History</button>
@@ -91,10 +91,10 @@
                     <button id="btn-noakhali" class="btn mx-auto bg-tia mt-3 font-semibold">Donate Now</button>
                     <dialog id="my_modal_1" class="modal hidden">
                       <div class="modal-box">
-                        <h3 class="text-lg font-bold">Congrats!</h3>
-                        <img src="./assets/coin.png" alt="">
-                        <p class="py-4">You have donated for humankind</p>
-                        <h5 class="font-bold text-xl">Successfully</h5>
+                        <div><h3 class="text-3xl font-bold mb-4 text-center">Congrats!</h3></div>
+                        <div><img src="./assets/coin.png" alt="" class="mx-auto"></div>
+                        <div><p class="py-4 text-center">You have donated for humankind</p></div>
+                        <div><h5 class="font-bold text-lg text-center">Successfully</h5></div>
                         <div class="modal-action">
                           <form method="dialog">
                             <!-- if there is a button in form, it will close the modal -->
@@ -131,10 +131,10 @@
                     <button id="btn-feni" class="btn mx-auto bg-tia mt-3 font-semibold">Donate Now</button>
                     <dialog id="my_modal_2" class="modal hidden">
                       <div class="modal-box">
-                        <h3 class="text-5xl font-bold">Congrats</h3>
-                        <img src="./assets/coin.png" alt="">
-                        <p class="py-4">You have donated for humankind</p>
-                        <h5 class="font-bold text-xl">Successfully</h5>
+                        <h3 class="text-3xl font-bold text-center">Congrats</h3>
+                        <img src="./assets/coin.png" alt="" class="mx-auto">
+                        <p class="py-4 text-center">You have donated for humankind</p>
+                        <h5 class="font-bold text-lg text-center">Successfully</h5>
                         <div class="modal-action">
                             <form method="dialog">
                               <!-- if there is a button in form, it will close the modal -->
@@ -171,10 +171,10 @@
                     <button id="btn-movement" class="btn mx-auto bg-tia mt-3 font-semibold">Donate Now</button>
                     <dialog id="my_modal_3" class="modal hidden">
                       <div class="modal-box">
-                        <h3 class="text-lg font-bold">Congrats</h3>
-                        <img src="./assets/coin.png" alt="">
-                        <p class="py-4">You have donated for humankind</p>
-                        <h5 class="font-bold text-xl">Successfully</h5>
+                        <h3 class="text-3xl font-bold text-center">Congrats</h3>
+                        <img src="./assets/coin.png" alt="" class="mx-auto">
+                        <p class="py-4 text-center">You have donated for humankind</p>
+                        <h5 class="font-bold text-lg text-center">Successfully</h5>
                         <div class="modal-action">
                           <form method="dialog">
                             <!-- if there is a button in form, it will close the modal -->
@@ -195,6 +195,7 @@
     </section>
 
     <!-- scripts -->
+     
      <script src="./js-files/home.js"></script>
      <script src="./js-files/btnFeatures.js"></script>
 </body>
